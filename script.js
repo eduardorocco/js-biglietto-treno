@@ -18,10 +18,22 @@ const costXkm = 0.21 //number (decimale)
 // x km * 0.21 euro = costo al km
 // costo al km - eventuale sconto = costo del biglietto
 
-// SE minorenne applica 20%
-// ALTRIMENTI SE over 65 applica 40%
+
 
 
 const kmPrice = userKm * costXkm //number
 
 //console.log(kmPrice)
+
+// SE minorenne applica 20%
+// ALTRIMENTI SE over 65 applica 40%
+
+let discout = 0
+
+if (userAge < 18) {
+    discout = (kmPrice * 20) / 100 
+} if (userAge >= 65) {
+    discout = (kmPrice * 40) / 100 
+}
+
+console.log(discout)

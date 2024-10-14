@@ -7,10 +7,13 @@ console.log('Ciao')
 
 //FORMULA PER IL CALCOLO DELLO SCONTO = sconto = prezzo * 20 / 100
 
-const userKm =  parseInt(prompt('Inserisci i kilometri da percorrere:')) //km dell'utente
-const userAge = parseInt(prompt('Inserisci la tua età:'))  //età utente
+const userKm =  parseInt(prompt('Inserisci i kilometri da percorrere:')) //km dell'utente //number
+const userAge = parseInt(prompt('Inserisci la tua età:'))  //età utente //number
+const costXkm = 0.21 //number (decimale)
 
-//console.log(userKm, userAge)
+
+//console.log(userKm, userAge, costXkm)
+
 
 // x km * 0.21 euro = costo al km
 // costo al km - eventuale sconto = costo del biglietto
@@ -18,3 +21,7 @@ const userAge = parseInt(prompt('Inserisci la tua età:'))  //età utente
 // SE minorenne applica 20%
 // ALTRIMENTI SE over 65 applica 40%
 
+
+const kmPrice = userKm * costXkm //number
+
+//console.log(kmPrice)
